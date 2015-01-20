@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Bunder local and remote path
+title:      Bundler local and remote path
 date:       2015-01-20 13:09:00
 summary:    Tell bundler to use a local copy of a gem repository
 categories: ruby
