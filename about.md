@@ -4,5 +4,5 @@ title: About
 permalink: /about/
 ---
 
-I'm a chilean [developer](http://github.com/jpcolomer), husband of my beatiful wife Cinthya and healthy
-life and exercising lover.
+I'm a chilean [developer](http://github.com/jpcolomer), married to my beatiful wife Cinthya, and healthy
+lifestyle and exercising lover.
