@@ -1,8 +1,8 @@
 ---
 layout:     post
-title:      Bundler local and remote path
+title:      Bundler use local gem repo
 date:       2015-01-20 13:09:00
-summary:    Tell bundler to use a local copy of a gem repository
+summary:    Tell bundler to use a local gem repository
 categories: ruby
 ---
 
