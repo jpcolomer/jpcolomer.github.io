@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Rails Dockerized using a private github repo
+title:      Rails Dockerized app using a private github repo
 date:       2015-01-23 13:09:00
 categories: docker
 ---
@@ -9,9 +9,11 @@ I've been playing with docker for a while, and I've been trying to use
 to it with a rails app in production. One of the problems that I've
 found was running bundler with a gem pointing to a private repository.
 
-### 1. Paste your public key on github
+### 1. Create a ssh key to use with your docker containers
 
-### 2. Base Dockerfile
+### 2. Set your public key on github
+
+### 3. Base Dockerfile
 
 Here is the base Dockerfile I use
 
@@ -27,7 +29,7 @@ RUN chmod 700 /root/.ssh/id_rsa
 RUN echo "Host github.com\n\tStrictHostKeyChecking no\n" >> /root/.ssh/config
 ```
 
-### 3. App Dockerfile
+### 4. App Dockerfile
 
 ```
 FROM base
