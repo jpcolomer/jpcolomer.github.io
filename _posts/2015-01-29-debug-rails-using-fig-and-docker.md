@@ -58,6 +58,7 @@ git clone https://github.com/docker/fig.git
 ```
 
 Next step, install fig
+
 ```
 cd fig
 python setup.py install
