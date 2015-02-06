@@ -74,6 +74,6 @@ server {
 Finally, it's important to run rails container first and then nginx container.
 
 ```
-docker run --name app my_app bundle exec rails server
-docker run --link app:web1 -p 443:443 my_nginx
+docker run --name app -d my_app bundle exec rails server
+docker run --link app:web1 -p 443:443 -d my_nginx
 ```
