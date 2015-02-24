@@ -125,10 +125,17 @@ if [ ! -z "$2" ]
 fi
 {% endhighlight %}
 
-Finally, to update myapps and nginx `sudo bash my_script.sh
-myappLatestVersion
-nginxLatestVersion`. If you want only to update myapp's containers `sudo bash
-my_script.sh myappLatestVersion`
+Finally, to update myapps and nginx
+
+```
+sudo bash my_script.sh myappLatestVersion nginxLatestVersion
+```
+
+If you want only to update myapp's containers
+
+```
+sudo bash my_script.sh myappLatestVersion
+```
 
 First, this script stops one container, then it starts that container with a new image and waits until Rails answers to a GET request. Then it stops and updates the second container.
 It also adds a host, dockerhost, to be able to use it in the nginx conf file. Docker containers are runned inside a loop because I've been having a random problem when docker containers are stopped and started afterwards.
